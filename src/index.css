@@ -1,0 +1,124 @@
+* {
+  margin:0;
+  box-sizing: border-box;
+  background-color: rgb(201, 230, 230);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: blue;
+  width: 100%;
+  margin: 0; 
+}
+
+.market-title, .nav {
+  margin: 0; 
+  padding: 5px;
+}
+
+.market-title {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  background-color: blue;
+}
+
+.nav {
+  color: white;
+  background-color: blue;
+}
+
+.nav:hover{
+  color:yellow;
+}
+
+.topHead{
+  color:black;
+  text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
+}
+
+.postContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.postContainer2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.post {
+  width: calc(33.333% - 20px);
+  background-color: white;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 750px) {
+  .post {
+    width: 100%;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.post:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.post h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.post p {
+  font-size: 18px;
+  color: black;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  background-color: white;
+}
+
+input {
+  background-color: white;
+}
+
+.awesome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.awesome-text {
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
